@@ -141,5 +141,5 @@ jobs:
             simple_live_app/build/dist/*/*.msix
             simple_live_app/build/dist/*/*.zip
 
-      - run: echo "🖥️ Windows build status: ${{ job.status }}"
+      - run: echo "🖥️ Windows build status:${{ job.status }}"
     
