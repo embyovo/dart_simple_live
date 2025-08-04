@@ -54,13 +54,13 @@ dependencies:
   media_kit_video: 1.2.5
   media_kit_libs_video: 1.0.5
 
-  # 新增：指定兼容版本的 dynamic_color（解决 toARGB32 错误）
-  dynamic_color: ^1.6.0
+
 
 dependency_overrides: 
   fading_edge_scrollview: ^4.1.1
   screen_brightness: ^2.1.2
-
+  # 新增：指定兼容版本的 dynamic_color（解决 toARGB32 错误）
+  dynamic_color: ^1.6.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
