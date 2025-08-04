@@ -74,8 +74,8 @@ jobs:
       - name: Upload to Release
         uses: softprops/action-gh-release@v1
         with:
-          name: "${{ fromJson(steps.version.outputs.content).version }}"
-          body: "${{ fromJson(steps.version.outputs.content).version_desc }}"
+          name: ${{ fromJson(steps.version.outputs.content).version }}
+          body: ${{ fromJson(steps.version.outputs.content).version_desc }}
           prerelease: ${{ fromJson(steps.version.outputs.content).prerelease }}
           token: ${{ secrets.TOKEN }}
           files: |
@@ -133,8 +133,8 @@ jobs:
       - name: Upload to Release
         uses: softprops/action-gh-release@v1
         with:
-          name: "${{ fromJson(steps.version.outputs.content).version }}"
-          body: "${{ fromJson(steps.version.outputs.content).version_desc }}"
+          name: ${{ fromJson(steps.version.outputs.content).version }}
+          body: ${{ fromJson(steps.version.outputs.content).version_desc }}
           prerelease: ${{ fromJson(steps.version.outputs.content).prerelease }}
           token: ${{ secrets.TOKEN }}
           files: |
@@ -142,3 +142,4 @@ jobs:
             simple_live_app/build/dist/*/*.zip
 
       - run: echo "🖥️ Windows build status: ${{ job.status }}"
+    
