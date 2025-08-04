@@ -94,8 +94,7 @@ jobs:
 
       - run: echo "📱 Android build status: ${{ job.status }}"
 
-
-  # 构建 Windows 版本
+  # 构建 Windows 版本（如果之前误删了，这里补充完整）
   build-windows:
     runs-on: windows-latest
     permissions:
